@@ -27,8 +27,9 @@ The calculator boasts a sleek and clean dark user interface. The design prioriti
 Clone the repository and open the `index.html` file in your preferred web browser.
 
 ```bash
-https://github.com/imankush10/JavaScript-Calculator
+git clone https://github.com/imankush10/JavaScript-Calculator
 cd JavaScript-Calculator
+.\index.html
 ```
 #Contributors
 [Ankush Kumar](http://github.com/imankush10 "Github")

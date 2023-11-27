@@ -33,5 +33,6 @@ cd JavaScript-Calculator
 ```
 #Contributors
 [Ankush Kumar](http://github.com/imankush10 "Github")
+[Himanshi Gupta](http://github.com/Himanshi0125 "Github")
 #License
 This project is licensed under the MIT License. Feel free to fork and modify as needed.

@@ -21,8 +21,14 @@ class Calculator {
     this.operation = undefined;
   }
   del() {
-    if (this.currentVal == "") return;
-    this.currentVal = this.currentVal.toString().slice(0, -1);
+    if(this.currentVal=='' && this.previousVal!=''){  
+      this.operation = undefined;
+      this.currentVal = this.previousVal;
+      this.previousVal = '';
+    }
+    else if(this.currentVal == "") return;
+    else this.currentVal = this.currentVal.toString().slice(0, -1);
+
   }
   numberAppend(number) {
     if (this.currentVal.length == 1 && this.currentVal == 0 && number != ".")
@@ -144,7 +150,7 @@ window.addEventListener('keydown', (dets)=>{
     calculator.del();
     calculator.updateDisplay();
   }
-  if(dets.key=='Enter'){
+  if(dets.key=='Enter' || dets.key=='='){
     calculator.compute();
     calculator.updateDisplay();
   }
